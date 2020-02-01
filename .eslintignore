@@ -1,0 +1,7 @@
+build/*.js
+src/assets
+src/views/coomComponents
+public
+dist
+src/*
+

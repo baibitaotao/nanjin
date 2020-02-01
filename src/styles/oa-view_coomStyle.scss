@@ -1,0 +1,221 @@
+$main-color:#D09551;
+$header-color:#FEFAFA;
+
+.page {
+  color: #666;
+  background-color: #f2f2f2;
+  width: 100%;
+
+  .tagText {
+    width: 80px;
+    font-size: 14px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 700;
+  }
+
+  a {
+    font-family: MicrosoftYaHei !important;
+    font-size: 14px;
+  }
+
+  .el-input__inner:focus {
+    border-color: $main-color !important;
+  }
+
+  .el-checkbox__input.is-checked .el-checkbox__inner {
+    background-color: $main-color;
+    border-color: $main-color;
+  }
+
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: $main-color;
+    border-color: $main-color;
+  }
+
+  .el-checkbox__input .is-focus .el-checkbox__inner {
+    border-color: $main-color;
+  }
+
+  .el-checkbox__inner:hover {
+    border-color: $main-color;
+  }
+
+  .optionButtons {
+    padding: 20px 0;
+
+    button {
+      background-color: $main-color !important;
+      color: #fff;
+      border-radius: 0px;
+      outline: $main-color;
+    }
+
+    .el-button--danger.is-plain:focus {
+      background: $main-color !important;
+      border-color: $main-color !important;
+      color: #FFF;
+    }
+
+    .el-button--danger.is-plain:hover {
+      background: $main-color !important;
+      border-color: $main-color !important;
+      color: #FFF;
+    }
+
+    .el-button--danger.is-plain.is-disabled {
+      color: #fff;
+      background-color: $main-color;
+      border-color: $main-color !important;
+    }
+
+    .el-button--danger.is-plain {
+      border-color: $main-color;
+    }
+  }
+
+  >div:nth-of-type(1) {
+    background-color: #fff;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 1px 5px #888;
+
+    .el-divider--horizontal {
+      margin: 10px 0;
+    }
+
+    >div:nth-of-type(1) {
+      width: 700px;
+      display: inline-block;
+      padding-top: 6px;
+
+      .el-input--small {
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 410px;
+        display: inline-block;
+      }
+
+      button {
+        background-color: $main-color;
+        color: #fff;
+        border-radius: 0px;
+        outline: $main-color;
+      }
+
+      .el-input__inner:focus {
+        border-color: $main-color;
+      }
+
+      .el-button {
+        border: 1px solid $main-color;
+      }
+
+      .el-button:active {
+        border-color: $main-color;
+      }
+
+      .el-button:focus {
+        border-color: $main-color;
+      }
+    }
+
+    .conditions {
+      margin-top: 10px;
+
+      >span:nth-of-type(1) {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      >div:nth-last-of-type(1) {
+        .el-button--danger.is-plain {
+          color: #fff;
+          background: $main-color;
+          border-color: $main-color;
+        }
+      }
+    }
+  }
+
+
+  .table {
+    .el-table th>.cell {
+      text-align: center;
+      font-weight: 700;
+    }
+      
+    .el-table .el-table-column--selection {
+      .cell {
+        text-align: left;
+      }
+    }
+
+    margin-bottom: 0rem;
+
+    td,
+    th {
+      border-top: 0px;
+      font-size: 12px;
+    }
+
+    >div:nth-last-of-type(1) {
+      margin-top: 10px;
+
+      .el-pagination .btn-prev {
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .el-pagination .btn-next {
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .el-pagination .el-pager li {
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .el-pagination .el-pager li:not(.disabled):hover {
+        color: $main-color;
+      }
+
+      .el-pagination .el-pager li:not(.disabled).active {
+        color: $main-color;
+      }
+    }
+  }
+
+  .bottom {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 1px 5px #888;
+
+    >span {
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    margin-top: 20px;
+    background-color: #fff;
+
+    .el-table__header-wrapper {
+      tr:nth-of-type(1) {
+        >th {
+          background-color: $header-color;
+        }
+      }
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield !important;
+}
